@@ -1,4 +1,61 @@
+.profile_header {
+	margin-top: 10px;
+}
+
 .profile_image {
-	background-color: black;
-	height: 100px;
+	background-color: white;
+	height: 60%;
+}
+
+.profile_video {
+	padding : 20px;
+}
+
+.profile_image img {
+	width: 100%;
+	height: 70%;
+}
+
+.dropDown {
+	text-align: center;
+	padding: 5px;
+	height: 30%;
+}
+
+.personal_info {
+	padding: 10px;
+	text-align: center;
+}
+
+.archives {
+	background-color : lightgray;
+}
+
+h2 {
+	padding-left: 10px;
+}
+
+a {
+	cursor: default;
+}
+
+.archiveDropdown {
+	text-align: right;
+	padding: 10px;
+	font-size: 40px;
+	cursor: pointer;
+}
+
+.archiveVideos {
+	background-color: lightgray;
+}
+
+.archiveVideos li {
+	list-style-type: none;
+	cursor: pointer;
+}
+
+.archiveVideos img {
+	height: 200px;
+	width: 200px;
 }
