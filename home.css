@@ -5,3 +5,11 @@
 .row {
   margin-top: 15px;
 }
+
+.beer-img {
+  display: none;
+}
+
+.mike-video:hover {
+  cursor: pointer;
+}
