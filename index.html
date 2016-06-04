@@ -1,6 +1,8 @@
 <html>
 <head>
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
 	<script src="index.js"></script>
 	<link rel="stylesheet" type="text/css" href="index.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -8,6 +10,38 @@
 </head>
 
 <body>
+
+	<div id="myModal" class="modal fade" role="dialog">
+	  <div class="modal-dialog contact">
+
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title">Mike</h4>
+	      </div>
+	      <div class="modal-body">
+					<ul class="list-group">
+						<li class="list-group-item">
+							<span class="badge">Mike</span>
+							Skype
+						</li>
+						<li class="list-group-item">
+							<span class="badge">(555)-342-1257</span>
+							Phone </li>
+						<li class="list-group-item">
+							<span class="badge">mike@alz.com</span>
+							 Email</li>
+					</ul>
+   </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
 	<div class="profile_header col-xs-12 col-sm-12 col-md-12 col-lg-12">
 		<div class="profile_image col-xs-4 col-sm-4 col-md-4 col-lg-4">
 			<h2 class="user_name">
@@ -15,7 +49,7 @@
 			</h2>
 			<img src="./images/archive1.png">
 			<div class="dropdown">
-			  <button class="btn-contact btn btn-success btn-lg" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+			  <button class="btn-contact btn btn-success btn-lg " type="button" id="dropdownMenu1" data-toggle="modal" data-target="#myModal" aria-haspopup="true" aria-expanded="true">
 			    Contact Me
 			    <span class="caret"></span>
 			  </button>
