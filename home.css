@@ -10,6 +10,16 @@
   display: none;
 }
 
-.mike-video:hover {
+.img-responsive {
+  -webkit-filter: brightness(100%);
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+
+.img-responsive:hover {
   cursor: pointer;
+  -webkit-filter: brightness(55%);
 }
