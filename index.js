@@ -1,4 +1,4 @@
-profiles = {
+data = {
 	"currentProfile" : "",
 	"profiles" :
 	[
@@ -39,7 +39,10 @@ profiles = {
 };
 
 var profileController = {
-
+  getProfile: function () {
+    var profileId = data.currentProfile;
+    return data.profile[profileId];
+  }
 };
 
 var viewProfile = {
