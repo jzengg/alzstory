@@ -4,14 +4,14 @@ profiles = {
 	[
 		{
 			"name" : "Mike",
-			"age" : "",
-			"diseaseStage" : "",
-			"location" : "",
-			"caregiverPatient" : "",
-			"username" : "",
-			"diagnosisYear" : "",
+			"age" : "57",
+			"diseaseStage" : "Early Onstage",
+			"location" : "Boston, MA",
+			"caregiverPatient" : "Patient",
+			"username" : "mikeisgreat",
+			"diagnosisYear" : "2013",
 			"videoURL" : "",
-			"photoURL" : "",
+			"photoURL" : "./images/avatar.png",
 			"archiveVideos" : [],
 			"contact" :
 			[
@@ -45,8 +45,13 @@ var profileController = {
 var viewProfile = {
 	init: function() {
 		// Grab all the dom elements
+		this.profileImage = $(".profile_image");
+		this.profileVideo = $(".profile_video");
+		this.bio = $(".bio");
+		this.hobbies = $(".hobbies");
+		this.friends = $(".freinds");
 	},
 	render: function() {
-
+		
 	}
 };
