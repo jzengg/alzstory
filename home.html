@@ -1,36 +1,96 @@
 <html>
   <head>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="home.js"> </script>
+    <link rel="stylesheet" type="text/css" href="home.css">
 
     <meta charset="utf-8">
-    <title></title>
+    <title>AlzFamily</title>
   </head>
   <body>
-
-  <div class="header">
-
-    <input type='text' placeholder="Search" class="search"> </input>
-    <a href="/profile"> Me </a>
+  <div class="container-fluid">
+    <h1> Alz Family </h1>
+    <div class="container-fluid header">
+  <div class="row">
+    <form class='form-inline col-xs-4 search' id="search_bar">
+      <input type='text' placeholder="Search" class="search-input form-control">
+    </form>
+    <a href="/profile" class="profile-link col-xs-1 col-xs-offset-6 btn btn-default"> Me </a>
   </div>
+</div>
 
-  <div class="grid">
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Mike</h4>
+      </div>
+      <div class="modal-body">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/o37A6nKxHqQ" frameborder="0" allowfullscreen></iframe>      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  <div class="container-fluid">
     <div class="row">
-      <div class="row-item"> Item 1</div>
-      <div class="row-item"> Item 2</div>
-      <div class="row-item"> Item 3</div>
+      <div class="col-xs-4">
+        <img class="default-img img-responsive mike-video" data-toggle="modal" data-target="#myModal" src="images/mike.png"> </img>
+        <img class="beer-img img-responsive" src="http://honolulumagazine-images.dashdigital.com/images/Blogs/BitingCommentary/2016/beerlab-team.jpg?ver=1458003939"> </img>
+      </div>
+      <div class="col-xs-4">
+        <img class="default-img img-responsive" src="http://i.huffpost.com/gen/1909949/thumbs/o-PAINTING-570.jpg?6"> </img>
+        <img class="beer-img img-responsive" src="https://si.wsj.net/public/resources/images/CS-AA032_BEER_S_P_20141016110305.jpg"> </img>
+      </div>
+      <div class="col-xs-4">
+        <img class="default-img img-responsive" src="https://images.turbotax.intuit.com/iqcms/marketing/lib/articlepics2/jewelry-designer-INF29090.jpg"> </img>
+        <img class="beer-img img-responsive" src="http://www.folsomtelegraph.com/sites/default/files/styles/photo_gallery_big/public/24et-mraz-brewing-2.jpg?itok=f6ST4KNh"> </img>
+      </div>
     </div>
     <div class="row">
-      <div class="row-item"> Item 4</div>
-      <div class="row-item"> Item 5</div>
-      <div class="row-item"> Item 6</div>
+        <div class="col-xs-4">
+
+          <img class="default-img img-responsive" src="http://static1.businessinsider.com/image/5674572772f2c14a008b6c26/what-bill-gates-warren-buffett-and-9-other-incredibly-rich-people-do-in-their-spare-time.jpg"> </img>
+          <img class="beer-img img-responsive" src="http://media.bizj.us/view/img/9383372/strategies-reubens-02-adam-robbings-storefront-rgb*750xx4794-2697-0-222.jpg"> </img>
+       </div>
+      <div class="col-xs-4">
+         <img class="default-img img-responsive" src="http://i.tmgrup.com.tr/dailysabah/2014/12/07/HaberDetay/1419692965363.jpg"> </img>
+         <img class="beer-img img-responsive" src="http://www.sacbee.com/food-drink/beer/beer-run/fysp3s/picture66712797/ALTERNATES/FREE_640/BostonBrewing"> </img>
+      </div>
+      <div class="col-xs-4">
+        <img class="default-img img-responsive" src="http://www.washington.edu/news/files/2013/04/00I-RSN-lab-71.jpg"> </img>
+        <img class="beer-img img-responsive" src="http://www.bendbulletin.com/csp/mediapool/sites/dt.common.streams.StreamServer.cls?STREAMOID=oPt_UTc1izMDW_Lgl4qgus$daE2N3K4ZzOUsqbU5sYvaF2QgXLViyMHh4m4u96MTWCsjLu883Ygn4B49Lvm9bPe2QeMKQdVeZmXF$9l$4uCZ8QDXhaHEp3rvzXRJFdy0KqPHLoMevcTLo3h8xh70Y6N_U_CryOsw6FTOdKL_jpQ-&CONTENTTYPE=image/jpeg"> </img>
+      </div>
+
     </div>
     <div class="row">
-      <div class="row-item"> Item 7</div>
-      <div class="row-item"> Item 8</div>
-      <div class="row-item"> Item 9</div>
+      <div class="col-xs-4">
+        <img class="default-img img-responsive" src="http://healthtoday.com/wp-content/uploads/2014/11/gardening-hobby.jpg"> </img>
+        <img class="beer-img img-responsive" src="http://thetimes-tribune.com/polopoly_fs/1.1258682!/image/88031156.jpg_gen/derivatives/landscape_490/88031156.jpg"> </img>
+      </div>
+
+      <div class="col-xs-4">
+        <img class="default-img img-responsive" src="http://www.primtech.net/Canada%20fishing/Bob-with-pike.jpg"> </img>
+        <img class="beer-img img-responsive" src="http://cdn.theatlantic.com/assets/media/img/posts/angelamerkelbeermain.jpg"> </img>
+      </div>
+
+      <div class="col-xs-4">
+        <img class="default-img img-responsive" src="http://www.precisionnutrition.com/wordpress/wp-content/uploads/2011/11/1-pre-le-2006-hiking.jpg"> </img>
+        <img class="beer-img img-responsive" src="https://www.kegworks.com/wp/wp-content/images/blogpost/old-woman-beer.jpg"> </img>
+      </div>
+
     </div>
   </div>
+</div>
 
   </body>
 </html>

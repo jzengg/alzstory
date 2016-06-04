@@ -1,0 +1,15 @@
+.container-fluid {
+    padding:15px;
+}
+
+.row {
+  margin-top: 15px;
+}
+
+.beer-img {
+  display: none;
+}
+
+.mike-video:hover {
+  cursor: pointer;
+}
