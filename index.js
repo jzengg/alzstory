@@ -2,7 +2,11 @@
 $( document ).ready(function() {
 
     $(".archiveDropdown").click(function() {
-		$(".archiveVideos").removeClass("hidden");
+		if ($(".archiveVideos").hasClass("hidden")) {
+			$(".archiveVideos").removeClass("hidden");
+		} else {
+			$(".archiveVideos").addClass("hidden");
+		}
     });
 });
 

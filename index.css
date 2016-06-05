@@ -57,6 +57,7 @@ a:hover {
 .archiveVideos li {
 	list-style-type: none;
 	cursor: pointer;
+	margin-bottom: 5%;
 }
 
 .archiveVideos img {
